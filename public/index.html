@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Leave a message</title>
+    </head>
+    <body>
+        <h1 id="header">Leave here a message for other users!</h1>
+        <div id="form">
+            <form action="/" method="POST">
+                <input type="text" placeholder="username" name="username">
+                <br><br>
+                <textarea name="message" id="message" placeholder="message"></textarea>
+                <br><br><br>
+                <input type="submit" id="enter">
+            </form>
+        </div>
+    </body>
+    <style>
+        body
+        {
+            background-color: whitesmoke;
+            font-family: sans-serif;
+        }
+        #header
+        {
+            font-size: 3rem;
+            text-align: center;
+        }
+        input, textarea
+        {
+            border: 1px solid black;
+            border-radius: 5px;
+            padding: 5px;
+        }
+        textarea
+        {
+            resize: none;
+            height: 150px;
+        }
+        #form
+        {
+            position: relative;
+            left: 50%;
+            translate: calc(-50%);
+            width: max-content;
+            height: max-content;
+            padding: 10px;
+            text-align: center;
+        }
+        #enter
+        {
+            padding: 10px 30px 10px 30px;
+            border-radius: 10px;
+            border: 0.5px solid black
+        }
+    </style>
+</html>
